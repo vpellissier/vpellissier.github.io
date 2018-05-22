@@ -4,7 +4,11 @@ title:  "Scrapping data with R"
 date:   2018-05-22 17:24:10 +0200
 categories: R packages
 ---
-##Preliminary steps
+
+The website [Open Transport Map](http://opentransportmap.info/) hosts very cool maps of road traffic volume across the whole EU.
+Unfortunately, the data are downloadable for each NUTS3 and there is no option to download all the data at once, or even download a selection of NUTS3, so I came together with this package which allow downloading all the maps for a given country.
+
+Preliminary steps
 -----------------
 
 ### Installing a usable web browser
@@ -31,7 +35,7 @@ There is several ways to do this, but here we are going to use a standalone serv
 
 Where path is the path were you have downloaded the file, and file the name of the file (should end with a .jar extension)
 
-##Scrapping the website
+Scrapping the website
 ---------------------
 
 Downloading all the zip file for a given country is quite straightforward. First, we need to know the name of the countries in the first dropdownlist
