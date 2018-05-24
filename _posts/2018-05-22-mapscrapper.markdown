@@ -15,6 +15,18 @@ Preliminary steps
 
 Before we can actually scrap data from the website, we need to setup a web browser that will run in the background. I recommand using Chrome (mainly because I could not manage doing it with Firefox but you're free to try it).
 
+### Installing Webdriver
+
+The package used to navigate through the website needs additionnal drivers to interface with the browser.
+The driver for chrome is called [chromedriver]() while the driver for Firefox is called [gekodriver]().
+Download the version suitable for your system and extract the .exe somewhere on your computer (for example in directories C:/gekdriver and C:/chromdriver).
+Then, you need to add these path the the Environment variables of your computer:
+	1. From the desktop, right-click My Computer and click Properties.
+	2. In the System Properties window, click on the Advanced tab
+	3. In the Advanced section, click the Environment Variables button.
+	4. Finally, in the Environment Variables window , highlight the Path variable in the Systems Variable section and click the Edit button. Add or modify the path lines with the paths you wish the computer to access. Each different directory is separated with a semicolon as shown below.
+	 ` C:\gekodriver;C:\chromedriver`
+
 ### Installing Rtools
 
 We also needs an external software to create some external files, called RTools. The installer can be downloaded [here](https://cran.r-project.org/bin/windows/Rtools/index.html). During the instalation tick the box "Add Rtools to system path"
