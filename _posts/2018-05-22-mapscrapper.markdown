@@ -25,7 +25,8 @@ Then, you need to add these path the the Environment variables of your computer:
 	2. In the System Properties window, click on the Advanced tab
 	3. In the Advanced section, click the Environment Variables button.
 	4. Finally, in the Environment Variables window , highlight the Path variable in the Systems Variable section and click the Edit button. Add or modify the path lines with the paths you wish the computer to access. Each different directory is separated with a semicolon as shown below.
-	 ` C:\gekodriver;C:\chromedriver`
+	
+` C:\gekodriver;C:\chromedriver`
 
 ### Installing Rtools
 
