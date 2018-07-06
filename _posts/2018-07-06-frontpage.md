@@ -36,7 +36,7 @@ Creating the paper first page
 Creating the paper first page is really straigtfoward when you have your CSV file. First, you create your author list in R from your CSV file:
 
 ``` r
-authors <- authors_names_csv(file.path(path.package('frontpage'), "extdata/example.csv")), header= TRUE)
+authors <- authors_names_csv(file.path(path.package('frontpage'), "extdata/example.csv"), header= TRUE)
 ```
 Here, the first row of example.csv contains column name, so the `header` option is set to `TRUE`
 
