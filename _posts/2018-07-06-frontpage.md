@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating paper frontpage with R"
+title:  "Creating a paper frontpage with R"
 date:   2018-07-06 14:40:10 +0200
 categories: R packages
 ---
@@ -16,6 +16,7 @@ As the package is not distributed by CRAN right now, you need to install it from
 ``` r
 install.packages('devtools')
 devtools::install_github('vpellissier/frontpage')
+library(fontpage)
 ```
 
 Creating the author list
