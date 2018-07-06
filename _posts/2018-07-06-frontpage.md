@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Creating a paper frontpage with R"
+date:   2018-07-06 14:40:10 +0200
+categories: R packages
+---
 Creating the first page of a paper is seemingly easy, you just collect the names and affiliations of everyone, list the authors in whatever order you or your supevisor decide, you list and number the affiliations in the order they appear and you report these numbers (often as upperscript) after each author names. However, if your paper has a long list of authors it might become tedious to do it manually. Even worse, there is always this one author in the middle of the list that suddenly adds an affiliation (granted, it might just be because you spent a lot of time finishing the paper, and then everyone moved). Anyway, it will then requires you to manually shift every single number after this authors.
 
 While I was facing this exact problem a few weeks ago, I decided to be lazy and write an R package to do it, instead of renumbering every single one of my 40 co-authors.
@@ -47,3 +53,4 @@ And all that is left to do is write the rest of your paper in that doc file!
 ``` r
 shell.exec(file.path(temp, 'frontpage1.docx'))
 ```
+
