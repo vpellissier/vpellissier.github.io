@@ -4,7 +4,7 @@ title:  "Creating a paper frontpage with R"
 date:   2018-07-06 14:40:10 +0200
 categories: R packages
 ---
-Creating the first page of a paper is seemingly easy, you just collect the name and affiliations of everyone, list the authors in whatever order you or your supevisor decide, you list and number the affiliations in the order they appear and you report these numbers (often as upperscript) after each author names. However, if your paper have a long list of authors it might become tedious to do it manually. Even worse, there is always this one author in the middle of the list that suddenly add an affilition (granted, it might just be because you spent a lot of time finishing the paper, and then everyone moved). Anyway, it will then requires you to manually shift every single number after this authors.
+Creating the first page of a paper is seemingly easy, you just collect the name and affiliations of everyone, list the authors in whatever order you or your supevisor decide, you list and number the affiliations in the order they appear and you report these numbers (often as upperscript) after each author names. However, if your paper has a long list of authors it might become tedious to do it manually. Even worse, there is always this one author in the middle of the list that suddenly adds an affiliation (granted, it might just be because you spent a lot of time finishing the paper, and then everyone moved). Anyway, it will then requires you to manually shift every single number after this authors.
 
 While I was facing this exact problem a few weeks ago, I decided to be lazy and write an R package to do it, instead of renumbering every single one of my 40 co-authors.
 
@@ -22,7 +22,7 @@ library(fontpage)
 Creating the author list
 ------------------------
 
-The author list with affiliations is stored as a CSV file, because it is conveniently modified using any spreadsheet tool. The CSV file should contain only one author per line, with the full name of the author in the first column, and every affiliations of that author in the following column (one affiliation per column only). The CSV can have header or not (i.e. the fist row contain column names or is simply the author). If you are using Excel to create the CSV, you should save using the type 'CSV (Comma delimited) (\*.csv)' and not any of the other two options ('CSV (Macintosh)' or 'CSV (MS-DOS)').
+The author list with affiliations is stored as a CSV file, because it is conveniently modified using any spreadsheet tool. The CSV file should contain only one author per line, with the full name of the author in the first column, and every affiliations of that author in the following columns (one affiliation per column only). The CSV can have header or not (i.e. the fist row contain column names or is simply the author). If you are using Excel to create the CSV, you should save using the type 'CSV (Comma delimited) (\*.csv)' and not any of the other two options ('CSV (Macintosh)' or 'CSV (MS-DOS)').
 
 I included a small example file in the package:
 
